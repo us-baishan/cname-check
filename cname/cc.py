@@ -57,10 +57,11 @@ def main():
     cwd = os.getcwd()
     print(cwd)
     shh=cwd+'/wb_sample.txt'
-    a=input('input websites file:')
+    add=cwd+'/websites.txt'
+    # a=input('input websites file:')
 
     dic = dii(shh)
-    with open(a, "r") as webs:
+    with open(add, "r") as webs:
         for web in webs:
             web = web.rstrip()
             shenmeweb= que(web)
@@ -68,8 +69,8 @@ def main():
                 for key in dic:
                     if key in ba:
                         print(' cdn provider:' + dic[key])
-                    else:
-                        print('no provider shown ')
+                    # else:
+                    #     print('no provider shown ')
 
 
 
@@ -78,7 +79,7 @@ def main():
 
     # print(dic)
 
-    bab = que(a)
+    bab = que(add)
 
 
 
